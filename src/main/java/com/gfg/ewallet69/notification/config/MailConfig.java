@@ -14,9 +14,11 @@ public class MailConfig {
         JavaMailSenderImpl mailSender=new JavaMailSenderImpl();
 
         mailSender.setHost("smtp.gmail.com");
-        mailSender.setPort(465);
-        mailSender.setUsername("ewallet69");
-        mailSender.setPassword("qfpc udnc yxlu zcsd");
+        mailSender.setPort(587);
+        mailSender.setUsername("<gmail_address>");
+        mailSender.setPassword("<APP password>");
+        mailSender.getJavaMailProperties().setProperty("mail.smtp.starttls.enable", "true");
+        mailSender.getJavaMailProperties().setProperty("mail.smtp.auth", "true");
         return mailSender;
     }
 }
