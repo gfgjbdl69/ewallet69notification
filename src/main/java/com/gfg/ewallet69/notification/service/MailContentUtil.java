@@ -14,7 +14,7 @@ public class MailContentUtil {
     public static String getSuccessReceiverEmailContent(String userName, Double amount){
         StringBuilder builder=new StringBuilder();
         builder.append("Hi "+userName+"\n");
-        builder.append("Your account is credited with "+amount+"  successful\n");
+        builder.append("Your account is credited with "+amount+"  successfully\n");
         return builder.toString();
     }
 
